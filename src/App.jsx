@@ -1,12 +1,10 @@
 import { Routes, Route } from 'react-router-dom';
 import NavBar from './components/NavBar';
 import Dashboard from './pages/Dashboard';
-import AssignedDevices from './pages/AssignedDevices';
-import AvailableDevices from './pages/AvailableDevices';
-import AddStudent from './pages/AddStudent';
-import RepairPool from './pages/RepairPool';
-import ImportDevices from './pages/ImportDevices';
-import DeviceOverview from './pages/DeviceOverview';
+import Assigned from './pages/DevicePools/Assigned';
+import Repair from './pages/DevicePools/Repair';
+import Available from './pages/DevicePools/Available';
+import Upload from './pages/Upload';
 
 export default function App() {
   return (
@@ -14,12 +12,10 @@ export default function App() {
       <NavBar />
       <Routes>
         <Route path="/" element={<Dashboard />} />
-        <Route path="/assigned" element={<AssignedDevices />} />
-        <Route path="/available" element={<AvailableDevices />} />
-        <Route path="/add-student" element={<AddStudent />} />
-        <Route path="/repair" element={<RepairPool />} />
-        <Route path="/import" element={<ImportDevices />} />
-        <Route path="/device/:tag" element={<DeviceOverview />} />
+        <Route path="/assigned" element={<Assigned />} />
+        <Route path="/repair" element={<Repair />} />
+        <Route path="/available" element={<Available />} />
+        <Route path="/upload" element={<Upload />} />
       </Routes>
     </div>
   );
