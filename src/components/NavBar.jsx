@@ -9,6 +9,7 @@ export default function NavBar() {
       <NavLink to="/repair" className={({ isActive }) => isActive ? base + ' bg-rhPurple text-white shadow' : base + ' bg-gray-200 text-rhPurple'}>Repair Pool</NavLink>
       <NavLink to="/available" className={({ isActive }) => isActive ? base + ' bg-rhPurple text-white shadow' : base + ' bg-gray-200 text-rhPurple'}>Available</NavLink>
       <NavLink to="/add-student" className={({ isActive }) => isActive ? base + ' bg-rhPurple text-white shadow' : base + ' bg-gray-200 text-rhPurple'}>Add Student</NavLink>
-    </nav>
+      <NavLink to="/import" className={({ isActive }) => isActive ? base + ' bg-rhPurple text-white shadow' : base + ' bg-gray-200 text-rhPurple'}>Import Devices</NavLink>
+</nav>
   );
 }
